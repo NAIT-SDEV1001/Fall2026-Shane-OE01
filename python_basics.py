@@ -56,6 +56,86 @@ print(f"Hello {first_name}! You are {age} years old")
 GST_RATE = 0.04
 gst = 100 * GST_RATE
 
+#User Input
+#input() always returns a string
+
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+
+# print(f"Hello {name}! You are {age} years old.")
+
+#Prompt for 2 number and place them in 2 variables
+#Add them together
+#Display the sum
+
+#5 + 2 = 7
+
+# number1 = int(input("Enter number 1: "))   
+# number2 = int(input("Enter number 2: "))
+
+# sum  = number1 + number2
+
+# print(f"{number1} + {number2} = {sum}")
+
+#Math operators
+print(4+6) #10
+print(6-4) #2
+print(4*6) #24
+print(6/3) #2.0 / always returns a float
+print(58//5) #floor division (rounds down to whole number)
+print (6**23) #Exponent
+print (9%4) #modulus 
+
+#Formatting
+total = 100.1234567
+print(round(total,2)) 
+print(round(total,6)) 
+
+print(f"{total:.2f}")
+print(f"{total:.6f}")
+
+price = 100
+print(f"{price:.2f}")
+
+#Math functions
+#import imports the math module which contains math functions and constants
+import math
+
+test_value = 5.245435
+
+print(math.ceil(test_value)) #round up to whole number
+print(math.floor(test_value)) #round down to whole number
+print(math.pow(2,3)) #exponent
+print(math.sqrt(9)) #square root
+print(math.pi) #pi constant
+
+
+#prompt the user for 2 numbers and place in 2 variables
+#Print the values in each variable
+#Swap the values that are in each variable 
+#Print the values in each variable
+
+#number1 = 20
+#number2 = 30
+
+#number1 = 30
+#number2 = 20
+
+number1 = input("Enter number 1: ")
+number2 = input("Enter number 2: ")
+
+print("Before")
+print (f"Number1: {number1}")
+print (f"Number2: {number2}")
+#Swap
+temp = number1
+number1 = number2
+number2 = temp
+
+print("After")
+print (f"Number1: {number1}")
+print (f"Number2: {number2}")
+
 
 
 
