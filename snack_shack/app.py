@@ -2,14 +2,14 @@
 #__name__ will be __main__ if run from the module
 #__name__ will be the name of the imported module (snack_shack) if run from where it was imported
 #import validation#must prefix the function with name of the module
-from .validation import get_valid_integer
+from .validation import get_valid_integer, get_valid_string
 from .pricing import calculate_total#can now just use the function name
 from .display import display_item,display_welcome,groovy_welcome,display_receipt
 
 def main():
     groovy_welcome()
     display_welcome()#call the function
-    item_input = input("Snack name: ")
+    item_input = get_valid_string("Enter Name: ")
     display_item(item_input)#pass an argument into the parameter in the function
     quantity = get_valid_integer("What quantity would you like? ")#call function to get a valid integer for the quantity
     rating = get_valid_integer("enter a rating: ")
